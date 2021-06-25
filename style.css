@@ -9,14 +9,16 @@ body{
 
 .container{
     display: grid;
-    margin: 50vh 50vw;
-    grid-template-columns: repeat(16, 11px);
-    grid-template-rows: repeat(16, 11px);
+    max-width: 500px;
+    min-height: 500px;
+    margin: 2rem auto;
+    grid-template-columns: repeat(16, 26px);
+    grid-template-rows: repeat(16, 26px);
 }
 
 .box{
-    height: 10px;
-    width: 10px;
+    height: 25px;
+    width: 25px;
     background-color: red;
     border: 1px solid black;
 }
