@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+body{
+    background-color: royalblue;
+}
+
+.container{
+    display: grid;
+    margin: 50vh 50vw;
+    grid-template-columns: repeat(16, 11px);
+    grid-template-rows: repeat(16, 11px);
+}
+
+.box{
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    border: 1px solid black;
+}
