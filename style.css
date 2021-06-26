@@ -8,12 +8,11 @@ body{
 }
 
 .container{
+    background-color: yellow;
     display: grid;
-    max-width: 500px;
-    min-height: 500px;
+    max-width: 350px;
     margin: 2rem auto;
-    grid-template-columns: repeat(16, 26px);
-    grid-template-rows: repeat(16, 26px);
+    
 }
 
 .box{
