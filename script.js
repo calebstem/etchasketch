@@ -6,11 +6,14 @@ let boxSize = 0;
 
 
 function createBox(boxSize){
-    container.style.gridTemplateColumns = `repeat(${boxSize}, 26px)`;
+    let ratioDim = 500 / boxSize;
+    container.style.gridTemplateColumns = `repeat(${boxSize}, ${ratioDim}px)`;
     for (let i = 1; i <= (boxSize * boxSize); i++){
         const newDiv = document.createElement('div');
         newDiv.id = 'r'+i;
         newDiv.className = 'box';
+        newDiv.style.height = `${ratioDim}px`
+        newDiv.style.width = `${ratioDim}px`  
         newDiv.addEventListener('mouseenter', function(){
             document.getElementById('r'+i).style.background = 'black' 
         }, false);
