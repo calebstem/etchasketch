@@ -8,11 +8,10 @@ body{
 }
 
 .container{
-    background-color: yellow;
     display: grid;
     max-width: 350px;
     margin: 2rem auto;
-    
+
 }
 
 .box{
