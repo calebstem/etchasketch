@@ -5,8 +5,7 @@ const box = document.getElementsByClassName('box');
 let boxSize = 16;
 //let gridNum = 'repeat(boxSize, 26px)';
 
-container.style.gridTemplateRows = 'repeat(boxSize, 26px)';
-container.style.gridTemplateColumns = 'repeat(16, 26px)';
+container.style.gridTemplateColumns = `repeat(${boxSize}, 26px)`;
 
 
 
