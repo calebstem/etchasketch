@@ -1,19 +1,41 @@
+
 * {
     margin: 0;
     padding: 0;
     }
 
 body{
-    background-color: royalblue;
+    background-color: #c7b4b5;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    font-size: 24px;
+    color: gold;
+    text-shadow: 1px 2px black;
+    font-family: 'Pacifico', cursive;
+}
+
+button{
+    display: flex;
+    background-color: #FFFAF9;
+    padding: 40px;
+    justify-content: space-around;
+    top: -50vh;
 }
 
 .container{
     display: grid;
-    max-width: 350px;
-    margin: 2rem auto;
-
+    max-width: 500px;
+    margin: 0 auto;
+    top: 25px;
+    border: 25px solid #e11622;
+    border-radius: 5px;
+    position: relative;
 }
 
 .box{
-    background-color: red;
+    background-color: #d5d3d5;
 }

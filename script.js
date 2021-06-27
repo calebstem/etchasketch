@@ -4,6 +4,7 @@ const box = document.getElementsByClassName('box');
 
 let boxSize = 0;
 
+createBox(16);
 
 function createBox(boxSize){
     let ratioDim = 500 / boxSize;
