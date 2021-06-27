@@ -8,6 +8,7 @@ createBox(16);
 
 function createBox(boxSize){
     let ratioDim = 500 / boxSize;
+    container.style.visibility = 'visible';
     container.style.gridTemplateColumns = `repeat(${boxSize}, ${ratioDim}px)`;
     for (let i = 1; i <= (boxSize * boxSize); i++){
         const newDiv = document.createElement('div');
@@ -24,6 +25,7 @@ function createBox(boxSize){
 }
 
 function removeBox(){
+    container.style.visibility = 'hidden';
     while (container.firstChild) {
         container.removeChild(container.lastChild);
     }
@@ -32,5 +34,10 @@ function removeBox(){
 function newBox(){
     removeBox();
     boxSize = prompt('Box Size');
+    if (boxSize > 100){
+        boxSize = 100;
+    } else if (boxSize == null){
+        boxSize=8;
+    }
     createBox(boxSize);
 }

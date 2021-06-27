@@ -19,11 +19,12 @@ header{
 }
 
 button{
-    display: flex;
     background-color: #FFFAF9;
-    padding: 40px;
-    justify-content: space-around;
-    top: -50vh;
+    padding: 50px;
+    top:  275px;
+    position: absolute;
+    left: 200px;
+    border-radius: 50%;
 }
 
 .container{
